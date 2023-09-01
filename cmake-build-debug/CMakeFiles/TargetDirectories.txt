@@ -1,0 +1,3 @@
+/Users/fire/docker/dockerShareDir/www/annotation-redis-3.0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/fire/docker/dockerShareDir/www/annotation-redis-3.0/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/fire/docker/dockerShareDir/www/annotation-redis-3.0/cmake-build-debug/CMakeFiles/annotation_redis_3_0.dir
