@@ -622,7 +622,7 @@ dictType keyptrDictType = {
 
 /* Command table. sds string -> command struct pointer. */
 dictType commandTableDictType = {
-    dictSdsCaseHash,           /* hash function */
+    dictSdsCaseHash,           /* hash function */ // 注释：使用的是times33算法
     NULL,                      /* key dup */
     NULL,                      /* val dup */
     dictSdsKeyCaseCompare,     /* key compare */

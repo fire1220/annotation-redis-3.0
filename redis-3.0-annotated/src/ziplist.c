@@ -210,11 +210,11 @@
 /*
  * 整数编码类型
  */
-#define ZIP_INT_16B (0xc0 | 0<<4)
-#define ZIP_INT_32B (0xc0 | 1<<4)
-#define ZIP_INT_64B (0xc0 | 2<<4)
-#define ZIP_INT_24B (0xc0 | 3<<4)
-#define ZIP_INT_8B 0xfe
+#define ZIP_INT_16B (0xc0 | 0<<4) // 注释：1 字节 	int16_t 类型的整数。
+#define ZIP_INT_32B (0xc0 | 1<<4) // 注释：1 字节 	int32_t 类型的整数。
+#define ZIP_INT_64B (0xc0 | 2<<4) // 注释：1 字节 	int64_t 类型的整数。
+#define ZIP_INT_24B (0xc0 | 3<<4) // 注释：1 字节 	24 位有符号整数。
+#define ZIP_INT_8B 0xfe           // 注释：1 字节 	8 位有符号整数。
 
 /* 4 bit integer immediate encoding 
  *

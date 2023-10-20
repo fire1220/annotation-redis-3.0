@@ -131,6 +131,7 @@ unsigned int dictGenHashFunction(const void *key, int len) {
     /* Mix 4 bytes at a time into the hash */
     const unsigned char *data = (const unsigned char *)key;
 
+    // 注释：（核心算法）每4个字符一组，做乘法和旋转
     while(len >= 4) {
         uint32_t k = *(uint32_t*)data;
 
@@ -162,6 +163,7 @@ unsigned int dictGenHashFunction(const void *key, int len) {
 }
 
 /* And a case insensitive hash function (based on djb hash) */
+// 注释：times33算法
 unsigned int dictGenCaseHashFunction(const unsigned char *buf, int len) {
     unsigned int hash = (unsigned int)dict_hash_function_seed;
 
