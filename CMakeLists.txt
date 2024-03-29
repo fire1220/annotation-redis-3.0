@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19)
 project(annotation_redis_3_0)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 99)
 
 include_directories(redis-3.0-annotated/deps/hiredis)
 include_directories(redis-3.0-annotated/deps/hiredis/adapters)
