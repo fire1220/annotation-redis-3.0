@@ -85,6 +85,7 @@ void zlibc_free(void *ptr) {
 
 #endif
 
+// 注释：   if (_n&(sizeof(long)-1)) _n += sizeof(long)-(_n&(sizeof(long)-1)); 表示_n向上取整
 #define update_zmalloc_stat_alloc(__n) do { \
     size_t _n = (__n); \
     if (_n&(sizeof(long)-1)) _n += sizeof(long)-(_n&(sizeof(long)-1)); \
